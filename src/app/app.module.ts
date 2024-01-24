@@ -9,24 +9,19 @@ import { ContactComponent } from './Contact/Contact.component';
 import { NavbarComponent } from './Navbar/Navbar.component';
 import { NotFoundComponent } from './notFound/notFound.component';
 import { FooterComponent } from './Footer/Footer.component';
-import { SimbaComponent } from './Simba/Simba.component';
 
 @NgModule({
-  declarations: [							
+  declarations: [
     AppComponent,
-      HomeComponent,
-      AboutComponent,
-      ContactComponent,
-      NavbarComponent,
-      NotFoundComponent,
-      FooterComponent,
-      SimbaComponent
-   ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule
+    HomeComponent,
+    AboutComponent,
+    ContactComponent,
+    NavbarComponent,
+    NotFoundComponent,
+    FooterComponent,
   ],
+  imports: [BrowserModule, AppRoutingModule],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}
