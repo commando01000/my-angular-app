@@ -7,14 +7,20 @@ import { HomeComponent } from './Home/Home.component';
 import { AboutComponent } from './About/About.component';
 import { ContactComponent } from './Contact/Contact.component';
 import { NavbarComponent } from './Navbar/Navbar.component';
+import { NotFoundComponent } from './notFound/notFound.component';
+import { FooterComponent } from './Footer/Footer.component';
+import { SimbaComponent } from './Simba/Simba.component';
 
 @NgModule({
-  declarations: [				
+  declarations: [							
     AppComponent,
       HomeComponent,
       AboutComponent,
       ContactComponent,
-      NavbarComponent
+      NavbarComponent,
+      NotFoundComponent,
+      FooterComponent,
+      SimbaComponent
    ],
   imports: [
     BrowserModule,
