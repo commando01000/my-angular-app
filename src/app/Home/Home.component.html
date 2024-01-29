@@ -6,6 +6,33 @@
     <title>Home</title>
   </head>
   <body>
-    <p class="text-danger"> Home works !</p>
+    <!-- <p class="text-danger">Home works !</p>
+    <h1 [style.color]="onSale == true ? 'red' : 'green'"></h1>
+    <h3><span>Name:</span>{{ userName }}</h3>
+    <h3><span>Age:</span>{{ userAge }}</h3>
+    <h3 [class]="price > 4000 ? 'text-success' : 'text-danger'">
+      <span>Price:</span>
+    </h3>
+    <a [href]="link">google</a>
+    <img [src]="imgURL" class="w-25" alt="image" />
+    <button (click)="welcome()" type="button" class="btn btn-danger">
+      Submit
+    </button> -->
+
+    <section id="products">
+      <div *ngIf="products.length != 0; else noData " class="container">
+        <div class="row">
+          <div *ngFor="let product of products" class="col-md-3">
+            <h4>{{ product.productName }}</h4>
+            <img [src]="product.productImage" class="w-100" alt="image" />
+            <p>{{ product.productDescription }}</p>
+            <p>{{ product.productPrice }}</p>
+          </div>
+        </div>
+      </div>
+      <ng-template #noData>
+        <p>there is no data</p>
+      </ng-template>
+    </section>
   </body>
 </html>

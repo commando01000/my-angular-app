@@ -9,9 +9,12 @@ import { ContactComponent } from './Contact/Contact.component';
 import { NavbarComponent } from './Navbar/Navbar.component';
 import { NotFoundComponent } from './notFound/notFound.component';
 import { FooterComponent } from './Footer/Footer.component';
+import { CategoryComponent } from './category/category.component';
+import { LaptopComponent } from './Laptop/Laptop.component';
+import { MobileComponent } from './Mobile/Mobile.component';
 
 @NgModule({
-  declarations: [
+  declarations: [			
     AppComponent,
     HomeComponent,
     AboutComponent,
@@ -19,7 +22,10 @@ import { FooterComponent } from './Footer/Footer.component';
     NavbarComponent,
     NotFoundComponent,
     FooterComponent,
-  ],
+      CategoryComponent,
+      LaptopComponent,
+      MobileComponent
+   ],
   imports: [BrowserModule, AppRoutingModule],
   providers: [],
   bootstrap: [AppComponent],

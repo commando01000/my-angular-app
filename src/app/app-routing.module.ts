@@ -4,16 +4,38 @@ import { HomeComponent } from './Home/Home.component';
 import { ContactComponent } from './Contact/Contact.component';
 import { AboutComponent } from './About/About.component';
 import { NotFoundComponent } from './notFound/notFound.component';
+import { CategoryComponent } from './category/category.component';
+import { LaptopComponent } from './Laptop/Laptop.component';
+import { MobileComponent } from './Mobile/Mobile.component';
 
 const routes: Routes = [
   {
     path: '',
-    component: HomeComponent,
+    redirectTo: 'home',
+    pathMatch: 'full',
   },
   {
     path: 'home',
-    pathMatch: 'full',
     component: HomeComponent,
+  },
+  {
+    path: 'category',
+    component: CategoryComponent,
+    children: [
+      {
+        path: '',
+        redirectTo: 'category',
+        pathMatch: 'full',
+      },
+      {
+        path: 'Laptop',
+        component: LaptopComponent,
+      },
+      {
+        path: 'Mobile',
+        component: MobileComponent,
+      },
+    ],
   },
   {
     path: 'contact',
