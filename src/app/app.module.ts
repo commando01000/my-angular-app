@@ -13,6 +13,7 @@ import { FooterComponent } from './Footer/Footer.component';
 import { CategoryComponent } from './category/category.component';
 import { LaptopComponent } from './Laptop/Laptop.component';
 import { MobileComponent } from './Mobile/Mobile.component';
+import { HttpClientModule } from '@angular/common/http';
 @NgModule({
   declarations: [
     AppComponent,
@@ -26,7 +27,7 @@ import { MobileComponent } from './Mobile/Mobile.component';
     LaptopComponent,
     MobileComponent,
   ],
-  imports: [BrowserModule, AppRoutingModule, FormsModule],
+  imports: [BrowserModule, AppRoutingModule, FormsModule, HttpClientModule],
   providers: [],
   bootstrap: [AppComponent],
 })

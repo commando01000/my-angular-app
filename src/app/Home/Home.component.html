@@ -76,7 +76,7 @@
       </div>
     </section> -->
 
-    <section id="products">
+    <!-- <section id="products">
       <div *ngIf="products.length != 0; else noData " class="container">
         <div class="row">
           <div *ngFor="let product of products" class="col-md-3">
@@ -90,6 +90,18 @@
       <ng-template #noData>
         <p>there is no data</p>
       </ng-template>
+    </section> -->
+
+    <section id="recipes">
+      <div class="container">
+        <div class="row">
+          <div *ngFor="let recipy of recipes" class="col-md-3">
+            <h4>{{ recipy.title }}</h4>
+            <img [src]="recipy.image_url" alt="recipy.title" class="w-100" srcset="">
+            
+          </div>
+        </div>
+      </div>
     </section>
 
   </body>
