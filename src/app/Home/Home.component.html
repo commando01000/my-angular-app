@@ -19,6 +19,63 @@
       Submit
     </button> -->
 
+    <!-- <section id="products">
+      <div *ngIf="products.length != 0; else noData " class="container">
+        <div class="row">
+          <div *ngFor="let product of products" class="col-md-3">
+            <h4>{{ product.productName }}</h4>
+            <img [src]="product.productImage" class="w-100" alt="image" />
+            <p>{{ product.productDescription }}</p>
+            <p>{{ product.productPrice }}</p>
+          </div>
+        </div>
+      </div>
+      <ng-template #noData>
+        <p>there is no data</p>
+      </ng-template>
+    </section> -->
+
+    <!-- <section id="products">
+      <div class="container">
+        <div class="row">
+          <div [ngSwitch]="products[1].productName" class="col-md-3">
+            <div *ngSwitchCase="'HP'">
+              <h4>hp</h4>
+            </div>
+            <div *ngSwitchCase="'Dell'">
+              <h4>{{ products[1].productName }}</h4>
+            </div>
+            <div *ngSwitchCase="'Mac'">
+              <h4>Mac</h4>
+            </div>
+            <div *ngSwitchDefault>
+              <h4>No Product Matches</h4>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section> -->
+
+    <!-- <section id="search">
+      <div class="container">
+        <div class="search-input">
+          <div class="mb-3">
+            <label for="" class="form-label">Name</label>
+            <input
+              type="text"
+              [(ngModel)]="userName"
+              class="form-control"
+              name="userName"
+              id="name"
+              aria-describedby="helpId"
+              placeholder="Enter your name"
+            />
+            <p>{{ userName }}</p>
+          </div>
+        </div>
+      </div>
+    </section> -->
+
     <section id="products">
       <div *ngIf="products.length != 0; else noData " class="container">
         <div class="row">
@@ -34,5 +91,6 @@
         <p>there is no data</p>
       </ng-template>
     </section>
+
   </body>
 </html>

@@ -1,3 +1,4 @@
+import { FormsModule } from '@angular/forms';
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
@@ -12,9 +13,8 @@ import { FooterComponent } from './Footer/Footer.component';
 import { CategoryComponent } from './category/category.component';
 import { LaptopComponent } from './Laptop/Laptop.component';
 import { MobileComponent } from './Mobile/Mobile.component';
-
 @NgModule({
-  declarations: [			
+  declarations: [
     AppComponent,
     HomeComponent,
     AboutComponent,
@@ -22,11 +22,11 @@ import { MobileComponent } from './Mobile/Mobile.component';
     NavbarComponent,
     NotFoundComponent,
     FooterComponent,
-      CategoryComponent,
-      LaptopComponent,
-      MobileComponent
-   ],
-  imports: [BrowserModule, AppRoutingModule],
+    CategoryComponent,
+    LaptopComponent,
+    MobileComponent,
+  ],
+  imports: [BrowserModule, AppRoutingModule, FormsModule],
   providers: [],
   bootstrap: [AppComponent],
 })
