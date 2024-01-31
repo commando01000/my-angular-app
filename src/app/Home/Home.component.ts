@@ -27,7 +27,6 @@ export class HomeComponent implements OnInit {
     _Recipy.getAllRecipes().subscribe((data) => {
       this.recipes = data.recipes;
       console.log(this.recipes);
-      
     });
   }
   ngOnInit() {}
