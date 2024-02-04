@@ -7,6 +7,7 @@ import { NotFoundComponent } from './notFound/notFound.component';
 import { CategoryComponent } from './category/category.component';
 import { LaptopComponent } from './Laptop/Laptop.component';
 import { MobileComponent } from './Mobile/Mobile.component';
+import { MoviesComponent } from './Movies/Movies.component';
 
 const routes: Routes = [
   {
@@ -44,6 +45,10 @@ const routes: Routes = [
   {
     path: 'about',
     component: AboutComponent,
+  },
+  {
+    path: 'movies',
+    component: MoviesComponent,
   },
   {
     path: '**',

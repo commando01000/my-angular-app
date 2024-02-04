@@ -14,8 +14,9 @@ import { CategoryComponent } from './category/category.component';
 import { LaptopComponent } from './Laptop/Laptop.component';
 import { MobileComponent } from './Mobile/Mobile.component';
 import { HttpClientModule } from '@angular/common/http';
+import { MoviesComponent } from './Movies/Movies.component';
 @NgModule({
-  declarations: [
+  declarations: [	
     AppComponent,
     HomeComponent,
     AboutComponent,
@@ -26,7 +27,8 @@ import { HttpClientModule } from '@angular/common/http';
     CategoryComponent,
     LaptopComponent,
     MobileComponent,
-  ],
+      MoviesComponent
+   ],
   imports: [BrowserModule, AppRoutingModule, FormsModule, HttpClientModule],
   providers: [],
   bootstrap: [AppComponent],
