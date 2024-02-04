@@ -8,11 +8,12 @@ import { MoviesService } from '../Movies.service';
   styleUrls: ['./Movies.component.css']
 })
 export class MoviesComponent implements OnInit {
-
+moviesList:any[]=[];
   constructor(moviesService:MoviesService) {
       moviesService.getAllMovies().subscribe({
         next:(data)=>{
           console.log(data);
+          this.moviesList=data.results;
         },
         error:(error)=>{
           console.log("an error occured");
