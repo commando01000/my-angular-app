@@ -1,20 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Movies</title>
-</head>
-<body>
-  <section id="movies">
-    <div class="container">
-      <div class="row">
-        <div *ngFor="let movie of moviesList" class="col-md-3">
-          <img [src]="'https://image.tmdb.org/t/p/w500'+movie.poster_path" class="w-100" [alt]="movie.title">
-          <h4>{{ movie.title }}</h4>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Movies</title>
+  </head>
+  <body>
+    <section id="movies">
+      <div class="container">
+        <div class="row">
+          <div *ngFor="let movie of moviesList" class="col-md-3">
+            <img
+              [src]="'https://image.tmdb.org/t/p/w500' + movie.poster_path"
+              class="w-100"
+              [alt]="movie.title"
+            />
+            <h4>{{ movie.title }}</h4>
+          </div>
         </div>
       </div>
-    </div>
-  </section>
-</body>
+    </section>
+  </body>
 </html>
